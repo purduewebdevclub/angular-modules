@@ -1,0 +1,19 @@
+<html ng-app="myApp">
+    <head>
+        <title>Angular Modules Example</title>
+    </head>
+    <body>
+        <div>{{"I've got AngularJS!"}}</div>
+        <div ng-controller="MyCtrl as mc">
+            <div>{{mc.info}}</div>
+        </div>
+        <div ng-controller="MyCtrl as mc2">
+            <input ng-model="mc2.info">
+            <label>{{mc2.info}}</label>
+        </div>
+        <div ng-controller="OtherCtrl as oc">
+            <div>{{oc.info}}</div>
+        </div>
+        <script src="bundle.js"></script> 
+    </body>
+</html>
